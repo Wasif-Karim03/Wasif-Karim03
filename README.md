@@ -9,7 +9,7 @@ I work on **AI research engineering, 3D reconstruction and perception**, alongsi
 
 **Open to software engineering and robotics opportunities.**
 
-[Portfolio](https://portfoliowasif-murex.vercel.app/) · [Résumé](https://github.com/Wasif-Karim03/Personal_Portfolio/blob/main/public/Resume_WasifKarim.pdf) · [Contact](mailto:mdwasifkarim2003@gmail.com)
+[Portfolio](https://portfoliowasif-murex.vercel.app/) · [Résumé](https://github.com/Wasif-Karim03/Personal_Portfolio/blob/main/public/Resume_WasifKarim.pdf) · [LinkedIn](https://www.linkedin.com/in/wasifkarim/) · [Contact](mailto:mdwasifkarim2003@gmail.com)
 
 ## Selected work
 
