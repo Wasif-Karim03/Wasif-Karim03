@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220" role="img" aria-labelledby="title desc">
+<title id="title">AI research engineering, software and robotics</title>
+<desc id="desc">A schematic connects a point cloud, software modules and sensor signals. These are the three connected areas of Wasif Karim's work.</desc>
+<rect width="1200" height="220" rx="16" fill="#101c2c"/>
+<g fill="none" stroke="#31465e" stroke-width="1"><path d="M640 0v220M720 0v220M800 0v220M880 0v220M960 0v220M1040 0v220M1120 0v220M1200 55H600M1200 110H600M1200 165H600"/></g>
+<text x="42" y="53" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" letter-spacing="3" fill="#7dd3c7">WASIF KARIM</text>
+<text x="42" y="106" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700" fill="#f3f6fa">Research meets engineering.</text>
+<text x="42" y="147" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#c1cfdf">3D perception · software systems · robotics</text>
+<text x="42" y="185" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#aabed3">Explore the projects, architecture and implementation notes below.</text>
+<g stroke="#7dd3c7" stroke-width="2" fill="none"><path d="M767 110h44m119 0h41"/><path d="m803 104 8 6-8 6m160-12 8 6-8 6"/></g>
+<g fill="#7dd3c7"><circle cx="658" cy="99" r="3"/><circle cx="677" cy="82" r="3"/><circle cx="700" cy="75" r="4"/><circle cx="725" cy="86" r="3"/><circle cx="742" cy="107" r="4"/><circle cx="731" cy="128" r="3"/><circle cx="706" cy="143" r="4"/><circle cx="681" cy="136" r="3"/><circle cx="659" cy="120" r="4"/><circle cx="687" cy="105" r="4"/><circle cx="710" cy="100" r="3"/><circle cx="712" cy="122" r="3"/></g>
+<g fill="#172b40" stroke="#aabed3" stroke-width="2"><rect x="827" y="73" width="87" height="76" rx="8"/><rect x="842" y="88" width="24" height="19" rx="3"/><rect x="875" y="88" width="24" height="19" rx="3"/><rect x="842" y="116" width="57" height="18" rx="3"/></g>
+<g fill="none" stroke="#f5b576" stroke-width="2"><circle cx="1042" cy="110" r="40"/><circle cx="1042" cy="110" r="24"/><path d="M1042 65v90m-45-45h90m-45 0 28-20"/></g>
+<g font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#c1cfdf" text-anchor="middle"><text x="700" y="183">PERCEPTION</text><text x="870" y="183">SOFTWARE</text><text x="1042" y="183">ROBOTICS</text></g>
+</svg>
