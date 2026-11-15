@@ -1,48 +1,94 @@
-# Wasif Karim
-
 <picture>
-  <source media="(max-width: 600px)" srcset="assets/engineering-mobile.svg">
-  <img src="assets/engineering.svg" alt="Research meets engineering: 3D perception, software systems and robotics" width="1200">
+  <source media="(max-width: 600px)" srcset="assets/notebook-header-mobile.svg">
+  <img src="assets/notebook-header.svg" alt="Wasif Karim. AI research engineering. Curious about how machines see. Software, perception and robotic systems." width="1200">
 </picture>
 
-I work on **AI research engineering, 3D reconstruction and perception**, alongside the software tools and embedded systems that connect them. My background brings together physics and computer science.
+I work on **3D reconstruction, perception and AI research engineering**, alongside the software tools and embedded systems that connect them. My background brings together physics and computer science.
 
 **Open to software engineering and robotics opportunities.**
 
 [Portfolio](https://portfoliowasif-murex.vercel.app/) · [Résumé](https://github.com/Wasif-Karim03/Personal_Portfolio/blob/main/public/Resume_WasifKarim.pdf) · [LinkedIn](https://www.linkedin.com/in/wasifkarim/) · [Contact](mailto:mdwasifkarim2003@gmail.com)
 
-## Selected work
+## A few things I've been working on
 
-### 3D reconstruction & Gaussian tooling
+Different projects, a shared interest: understanding a system well enough to make something useful with it.
 
-**[GSAV / PLY Editor](https://github.com/Wasif-Karim03/gsav-ply_editor_OC)** — GSPlay and gs-encoder integration for decoding, editing and exporting Gaussian sequences. Includes color/export fixes, regression tests and documented upstream provenance.
+### GSAV / PLY Editor
 
-[Architecture & setup](https://github.com/Wasif-Karim03/gsav-ply_editor_OC#what-it-does) · [Recorded audit & limitations](https://github.com/Wasif-Karim03/gsav-ply_editor_OC/blob/main/gsplay/docs/audit-2026-09-15.md)
+**3D reconstruction & tooling**
 
-### Robotics & perception
+Connecting GSPlay and gs-encoder for Gaussian-sequence editing and export, with format validation, color fixes and regression tests. The integration notes document the process boundary between viewer and codec, upstream provenance, and recorded audit limitations.
 
-**[Self-Driving Car](https://github.com/Wasif-Karim03/SD_C)** — Jetson RC-car experiments across camera perception, LiDAR, GPS, steering and throttle control. The repository brings together hardware interfaces, calibration tools and an evolving integration workspace.
+[Project & setup](https://github.com/Wasif-Karim03/gsav-ply_editor_OC) · [Integration audit](https://github.com/Wasif-Karim03/gsav-ply_editor_OC/blob/main/gsplay/docs/audit-2026-09-15.md) · [Upstream provenance](https://github.com/Wasif-Karim03/gsav-ply_editor_OC#provenance-and-licensing)
 
-[Start here](https://github.com/Wasif-Karim03/SD_C#start-here) · [Current workspace](https://github.com/Wasif-Karim03/SD_C/tree/main/final%20updates)
+<details open>
+<summary>Source note: validating an incoming GSAV file</summary>
 
-### AI on embedded hardware
+From [`gsav.py`](https://github.com/Wasif-Karim03/gsav-ply_editor_OC/blob/main/gsplay/src/infrastructure/gsav.py), an exact source excerpt:
 
-**[PhotoCam–ThinkBox](https://github.com/Wasif-Karim03/Photo--cc)** — A Raspberry Pi camera that turns a captured scene into a poem, joke or quote on a thermal printer. Its event-driven pipeline separates hardware interfaces, AI backends and UI, with mock drivers and offline fallback content.
+```python
+def validate_gsav(path: Path) -> None:
+    if path.suffix.lower() != ".gsav" or not path.is_file():
+        raise GsavError("Choose an existing .gsav file.")
+    with path.open("rb") as stream:
+        header = stream.read(128)
+    if len(header) != 128 or header[:4] != b"GSAV":
+        raise GsavError("Invalid or truncated GSAV header.")
+```
 
-[Architecture](https://github.com/Wasif-Karim03/Photo--cc/blob/main/docs/ARCHITECTURE.md) · [Mock mode & tests](https://github.com/Wasif-Karim03/Photo--cc/blob/main/docs/DEVELOPMENT.md)
+</details>
+
+### Self-Driving Car
+
+**Robotics & perception**
+
+An evolving Jetson RC-car workspace spanning camera and LiDAR perception, sensor interfaces, calibration and vehicle control. See the project notes for implementation status and current limitations.
+
+[Project & hardware notes](https://github.com/Wasif-Karim03/SD_C#start-here) · [Current workspace](https://github.com/Wasif-Karim03/SD_C/tree/main/final%20updates)
+
+<a href="assets/point-cloud-scene.png"><img src="assets/point-cloud-scene.png" alt="Colorized point-cloud scene showing a street, people and vehicles" width="820"></a>
+
+*Point-cloud scene · [View full image](assets/point-cloud-scene.png)*
+
+### PhotoCam–ThinkBox
+
+**Embedded AI & software architecture**
+
+Capture a scene, generate a poem, joke or quote, and print it on a thermal receipt. Device drivers, inference backends and UI are separated. The state model stays independent of the hardware orchestration; mock drivers and offline fallback content make the system easier to inspect and exercise.
+
+[Project](https://github.com/Wasif-Karim03/Photo--cc) · [Architecture](https://github.com/Wasif-Karim03/Photo--cc/blob/main/docs/ARCHITECTURE.md) · [Mock mode & tests](https://github.com/Wasif-Karim03/Photo--cc/blob/main/docs/DEVELOPMENT.md)
+
+<details open>
+<summary>Source note: the camera's pipeline states</summary>
+
+From [`state.py`](https://github.com/Wasif-Karim03/Photo--cc/blob/main/photocam/app/state.py), an exact source excerpt:
+
+```python
+class State(Enum):
+    BOOT = "boot"
+    IDLE = "idle"
+    CAPTURING = "capturing"
+    THINKING = "thinking"
+    PRINTING = "printing"
+    RESULT = "result"
+    ERROR = "error"
+    SHUTDOWN = "shutdown"
+```
+
+</details>
 
 ## Software engineering
 
 | Project | Engineering focus |
 | --- | --- |
-| [Claudex](https://github.com/Wasif-Karim03/Claudex_Widget) | Native macOS usage widget; Swift core, log parsing, refresh/backoff behavior and tests. |
+| [Claudex](https://github.com/Wasif-Karim03/Claudex_Widget) | Native macOS usage widget; Swift core, session-log parsing, refresh/backoff behavior and tests. |
 | [Mochi Tracker](https://github.com/Wasif-Karim03/Mochi_tracker) | AppKit typing companion; event handling, local aggregate accounting and keyboard animation. |
 | [OnlySwap](https://github.com/Wasif-Karim03/OnlySwap) | Campus marketplace in development; TypeScript, Expo, Supabase, database policies and application workflows. |
 
 ## Explore further
 
-- **Local vision-language models:** [Poetry Cam](https://github.com/Wasif-Karim03/PoetryCam), a Raspberry Pi/Ollama camera variant with a Flask interface.
-- **Embedded systems:** [Terra PetPlant](https://github.com/Wasif-Karim03/terra-petplant), an ESP32S3 plant companion with sensors, display and audio.
-- **AI developer tooling:** [Claude × Codex](https://github.com/Wasif-Karim03/Claude-x-Codex), model routing, review stages and run audits.
+- [Poetry Cam](https://github.com/Wasif-Karim03/PoetryCam): Raspberry Pi/Ollama vision-language camera with a Flask interface.
+- [Terra PetPlant](https://github.com/Wasif-Karim03/terra-petplant): ESP32S3 plant companion with sensors, display and audio.
+- [Claude × Codex](https://github.com/Wasif-Karim03/Claude-x-Codex): model routing, review stages and run audits.
 
-Each repository documents its own setup, status and limitations. Research prototypes, integrations and product concepts are identified in their project documentation.
+Each repository documents its own setup, status and limitations.

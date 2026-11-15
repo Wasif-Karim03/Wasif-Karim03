@@ -1,8 +1,10 @@
 # GitHub profile
 
-This public repository supplies the profile README for Wasif-Karim03. It contains Markdown and a static SVG banner; there is no application runtime, dependency installation or build step.
+This public repository supplies the profile README for Wasif-Karim03. It contains Markdown, static SVG typography and a user-supplied PNG; there is no runtime dependency or build step.
 
-- `README.md`: professional introduction, public contact links and curated project navigation.
-- `assets/engineering.svg`: accessible static schematic, not a photograph or measured result.
+- `README.md`: introduction, selected projects, source notes and professional links.
+- `assets/notebook-header*.svg`: responsive dark Research Notebook typography.
+- `assets/point-cloud-scene.png`: owner-supplied image; preserve the original pixels and factual caption.
+- `assets/SOURCES.md`: asset and excerpt provenance.
 
-Keep project status and contributions accurate. Preserve upstream attribution. Link only public material; never add private client data, credentials or unverified benchmarks. Use existing project evidence for technical claims. Check links and inspect the rendered GitHub profile on desktop and narrow screens after changes. Keep the README concise and avoid remote tracking widgets.
+The approved direction is a dark, typography-led research notebook. Avoid synthetic diagrams or decorative generated imagery. Use actual public project material or assets explicitly supplied by the owner. Keep project status and contributions accurate and preserve upstream attribution. Never add private client data, credentials or unverified benchmarks. Check links, source excerpts and the rendered profile on desktop and narrow screens after changes. Surrounding profile colors remain controlled by GitHub and the viewer’s appearance settings.
