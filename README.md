@@ -1,17 +1,40 @@
 <picture>
-  <source media="(max-width: 600px)" srcset="assets/notebook-header-mobile.svg">
-  <img src="assets/notebook-header.svg" alt="Wasif Karim. AI research engineering. Curious about how machines see. Software, perception and robotic systems." width="1200">
+  <source media="(max-width: 600px)" srcset="assets/notebook/header-mobile.png">
+  <img src="assets/notebook/header-desktop.png" alt="Wasif Karim. AI research engineering. Curious about how machines see. Software, perception and robotic systems." width="846">
 </picture>
 
-I work on **3D reconstruction, perception and AI research engineering**, alongside the software tools and embedded systems that connect them. My background brings together physics and computer science.
-
-**Open to software engineering and robotics opportunities.**
+I work on **3D reconstruction, perception and AI research engineering**, alongside the software tools and embedded systems that connect them.
 
 [Portfolio](https://portfoliowasif-murex.vercel.app/) · [Résumé](https://github.com/Wasif-Karim03/Personal_Portfolio/blob/main/public/Resume_WasifKarim.pdf) · [LinkedIn](https://www.linkedin.com/in/wasifkarim/) · [Contact](mailto:mdwasifkarim2003@gmail.com)
 
-## A few things I've been working on
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/notebook/intro-mobile.png">
+  <img src="assets/notebook/intro-desktop.png" alt="A few things I've been working on. Different projects, a shared interest: understanding a system well enough to make something useful with it." width="846">
+</picture>
 
-Different projects, a shared interest: understanding a system well enough to make something useful with it.
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/notebook/gsav-mobile.png">
+  <img src="assets/notebook/gsav-desktop.png" alt="GSAV / PLY Editor: 3D reconstruction and tooling. Gaussian-sequence editing/export integration, format validation and regression tests, alongside an attributed gsav.py source excerpt." width="846">
+</picture>
+
+[Project & setup](https://github.com/Wasif-Karim03/gsav-ply_editor_OC) · [Integration audit](https://github.com/Wasif-Karim03/gsav-ply_editor_OC/blob/main/gsplay/docs/audit-2026-09-15.md) · [Source](https://github.com/Wasif-Karim03/gsav-ply_editor_OC/blob/main/gsplay/src/infrastructure/gsav.py)
+
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/notebook/robotics-mobile.png">
+  <img src="assets/notebook/robotics-desktop.png" alt="Self-Driving Car: a Jetson RC-car workspace spanning perception, sensor interfaces and control, alongside the owner-supplied colorized point-cloud scene." width="846">
+</picture>
+
+[Project & hardware notes](https://github.com/Wasif-Karim03/SD_C#start-here) · [Current workspace](https://github.com/Wasif-Karim03/SD_C/tree/main/final%20updates) · [Full point-cloud image](assets/point-cloud-scene.png)
+
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/notebook/camera-mobile.png">
+  <img src="assets/notebook/camera-desktop.png" alt="PhotoCam–ThinkBox: a camera-to-thermal-printer system with separated hardware, inference and UI, alongside its actual state.py pipeline states." width="846">
+</picture>
+
+[Project](https://github.com/Wasif-Karim03/Photo--cc) · [Architecture](https://github.com/Wasif-Karim03/Photo--cc/blob/main/docs/ARCHITECTURE.md) · [Mock mode & tests](https://github.com/Wasif-Karim03/Photo--cc/blob/main/docs/DEVELOPMENT.md)
+
+<details>
+<summary>Readable project text and source excerpts</summary>
 
 ### GSAV / PLY Editor
 
@@ -21,7 +44,7 @@ Connecting GSPlay and gs-encoder for Gaussian-sequence editing and export, with 
 
 [Project & setup](https://github.com/Wasif-Karim03/gsav-ply_editor_OC) · [Integration audit](https://github.com/Wasif-Karim03/gsav-ply_editor_OC/blob/main/gsplay/docs/audit-2026-09-15.md) · [Upstream provenance](https://github.com/Wasif-Karim03/gsav-ply_editor_OC#provenance-and-licensing)
 
-<details open>
+<details>
 <summary>Source note: validating an incoming GSAV file</summary>
 
 From [`gsav.py`](https://github.com/Wasif-Karim03/gsav-ply_editor_OC/blob/main/gsplay/src/infrastructure/gsav.py), an exact source excerpt:
@@ -46,9 +69,7 @@ An evolving Jetson RC-car workspace spanning camera and LiDAR perception, sensor
 
 [Project & hardware notes](https://github.com/Wasif-Karim03/SD_C#start-here) · [Current workspace](https://github.com/Wasif-Karim03/SD_C/tree/main/final%20updates)
 
-<a href="assets/point-cloud-scene.png"><img src="assets/point-cloud-scene.png" alt="Colorized point-cloud scene showing a street, people and vehicles" width="820"></a>
-
-*Point-cloud scene · [View full image](assets/point-cloud-scene.png)*
+[View the full point-cloud image](assets/point-cloud-scene.png)
 
 ### PhotoCam–ThinkBox
 
@@ -58,7 +79,7 @@ Capture a scene, generate a poem, joke or quote, and print it on a thermal recei
 
 [Project](https://github.com/Wasif-Karim03/Photo--cc) · [Architecture](https://github.com/Wasif-Karim03/Photo--cc/blob/main/docs/ARCHITECTURE.md) · [Mock mode & tests](https://github.com/Wasif-Karim03/Photo--cc/blob/main/docs/DEVELOPMENT.md)
 
-<details open>
+<details>
 <summary>Source note: the camera's pipeline states</summary>
 
 From [`state.py`](https://github.com/Wasif-Karim03/Photo--cc/blob/main/photocam/app/state.py), an exact source excerpt:
@@ -74,6 +95,9 @@ class State(Enum):
     ERROR = "error"
     SHUTDOWN = "shutdown"
 ```
+
+</details>
+
 
 </details>
 
