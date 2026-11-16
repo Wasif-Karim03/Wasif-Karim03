@@ -5,7 +5,7 @@
 
 I work on **3D reconstruction, perception and AI research engineering**, alongside the software tools and embedded systems that connect them.
 
-[Portfolio](https://wasif-portfolio-pi.vercel.app/)  · [LinkedIn](https://www.linkedin.com/in/wasifkarim/) · [Contact](mailto:mdwasifkarim2003@gmail.com)
+[Portfolio](http://www.wasifkarim.com/)  · [LinkedIn](https://www.linkedin.com/in/wasifkarim/) · [Contact](mailto:mdwasifkarim2003@gmail.com)
 
 <picture>
   <source media="(max-width: 600px)" srcset="assets/notebook/intro-mobile.png">
